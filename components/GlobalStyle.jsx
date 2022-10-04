@@ -7,7 +7,8 @@ const GlobalStyle = createGlobalStyle`
     --text-secondary: white;
     --background-primary: #513174;
 
-  --text-responsive: calc(10px + 2vmin)
+    --text-responsive: calc(10px + 2vmin);
+    --h1-responsive: calc(20px + 4vmin);
   }
 
 *{
@@ -27,6 +28,19 @@ a {
   color: inherit;
   text-decoration: none;
 
-}`;
+}
+h1 {
+  font-size: var(--h1-responsive);
+}
+h2 {
+  font-size: var(--text-responsive);
+}
+h3 {
+  font-size: var(--text-responsive);
+}
+p {
+  font-size: var(--text-responsive);
+}
+`;
 
 export default GlobalStyle;

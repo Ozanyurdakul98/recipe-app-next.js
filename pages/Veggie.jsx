@@ -11,5 +11,5 @@ export default function Veggie() {
         Mollitia.
       </p>
     </div>
-  );
+  )
 }

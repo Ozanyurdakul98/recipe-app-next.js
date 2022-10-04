@@ -1,4 +1,4 @@
 This App uses:
 
 - Next.js
-  -Styled Components
+- Styled Components

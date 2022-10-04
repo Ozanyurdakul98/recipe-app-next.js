@@ -6,7 +6,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <Layout>
         <GlobalStyle />
-        <Component {...pageProps} />;
+        <Component {...pageProps} />
       </Layout>
     </>
   );
