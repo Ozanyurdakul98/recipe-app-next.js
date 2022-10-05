@@ -8,21 +8,21 @@ export default function Veggie() {
     <StyledContainer>
       <Background>
         <Image
-          src="https://unsplash.com/photos/surQ2mkZNxw/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8Mzd8fGRlc3NlcnR8ZW58MHwwfHx8MTY1OTMzNzk1NQ&force=true&w=2400"
+          src="https://unsplash.com/photos/v6KsaQtqINc/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8N3x8dmVnZ2llfGVufDB8fHx8MTY2NDk0NTUyNQ&force=true&w=2400"
           alt="Schöne Fische"
           layout="responsive"
           width={2400}
-          height={1800}
+          height={3184}
         />
       </Background>
       <DetailPage style={{ marginTop: "40px" }}>
         <h1>Blueberry Muffin Cake</h1>
+        <ul>
+          <li>45 min (Total time)</li>
+          <li>15 min (Prep time)</li>
+          <li>9 servings</li>
+        </ul>
         <p>
-          <ul>
-            <li>45 min (Total time)</li>
-            <li>15 min (Prep time)</li>
-            <li>9 servings</li>
-          </ul>
           Ingredients <br />
           cooking spray 1 cup blueberries <br />1 1/2 cups all-purpose flour,
           divided <br />
@@ -69,6 +69,6 @@ const StyledContainer = styled.div`
 `;
 
 const Background = styled.div`
-  width: 70%;
+  width: 50%;
   height: 70%;
 `;

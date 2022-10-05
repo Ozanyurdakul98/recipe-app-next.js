@@ -12,12 +12,12 @@ export default function Home() {
       <StyledContainer>
         <DetailPage>
           <h1>Some of my favourite Recipes</h1>
+          <ul>
+            <li>very tasty</li>
+            <li>fast serving</li>
+            <li>and made with next.js</li>
+          </ul>
           <p>
-            <ul>
-              <li>very tasty</li>
-              <li>fast serving</li>
-              <li>and made with next.js</li>
-            </ul>
             So this is the first website I made with next.js technology <br />
             Ofcourse it's nothing big, but the purpose is to get familiar with
             the technology with small steps.

@@ -17,12 +17,13 @@ export default function Dessert() {
       </Background>
       <DetailPage style={{ marginTop: "40px" }}>
         <h1>Blueberry Muffin Cake</h1>
+
+        <ul>
+          <li>45 min (Total time)</li>
+          <li>15 min (Prep time)</li>
+          <li>9 servings</li>
+        </ul>
         <p>
-          <ul>
-            <li>45 min (Total time)</li>
-            <li>15 min (Prep time)</li>
-            <li>9 servings</li>
-          </ul>
           Ingredients <br />
           cooking spray 1 cup blueberries <br />1 1/2 cups all-purpose flour,
           divided <br />

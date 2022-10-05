@@ -8,6 +8,8 @@ const GlobalStyle = createGlobalStyle`
     --background-primary: #513174;
 
     --text-responsive: calc(10px + 2vmin);
+    --nav-responsive: calc(14px + 2vmin);
+
     --h1-responsive: calc(20px + 4vmin);
   }
 
@@ -40,6 +42,13 @@ h3 {
 }
 p {
   font-size: var(--text-responsive);
+}
+ul {
+  font-size: var(--text-responsive);
+}
+nav{
+  font-size: var(--nav-responsive);
+  gap: 18px;
 }
 `;
 

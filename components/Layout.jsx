@@ -14,5 +14,6 @@ export default function Layout({ children }) {
 
 const StyledMain = styled.main`
   margin: 0;
+  margin-top: 100px;
   min-height: calc(100vh - 8rem);
 `;
