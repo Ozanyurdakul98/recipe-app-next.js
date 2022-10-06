@@ -3,8 +3,17 @@ import Link from "next/link";
 import GridList from "../../components/GridList.jsx";
 import { DetailPage } from "../../components/DetailPage.jsx";
 import styled from "styled-components";
+import { getAllProducts } from "../../services/productService";
 
-export default function Products() {
+export async function getServerSideProps() {
+  const products = await getAllProducts();
+
+  return {
+    props: { products: products },
+  };
+}
+
+export default function Products({ products }) {
   return (
     <>
       <StyledContainer>
@@ -15,20 +24,19 @@ export default function Products() {
           <h1>Recipes</h1>
           <p>
             Basic Dynamic Routing <br />
-            <br /> This is a example for dynamic Routing/Site generation. Go to
-            one of these Recipes and look at the URL. You can exchange the
-            id-number with any number you want
+            <br /> This is a example of dynamic Routing and SSR Server Site
+            Generation. Go to one of these Recipes and look at the URL. You can
+            exchange the id-number with any number you want
             <br />
             <br />
           </p>
           <GridList>
-            <li>
-              <Link href="/Recipes/1">Recipe-1</Link>
-            </li>
-            <li>
-              <Link href="/Recipes/2">Recipe-2</Link>
-            </li>
-          </GridList>{" "}
+            {products.map((product) => (
+              <li key={product.id}>
+                <Link href={`/RecipesSSR/${product.id}`}>{product.name}</Link>
+              </li>
+            ))}
+          </GridList>
         </DetailPage>
       </StyledContainer>
     </>

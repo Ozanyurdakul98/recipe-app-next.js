@@ -2,6 +2,8 @@ import { useRouter } from "next/router";
 import { DetailPage } from "../../components/DetailPage";
 import styled from "styled-components";
 import Link from "next/link";
+import { getAllProducts } from "../../services/productService";
+import Head from "next/head";
 
 export default function Product() {
   const router = useRouter();

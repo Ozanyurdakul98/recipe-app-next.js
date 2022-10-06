@@ -19,12 +19,12 @@ export default function Home() {
           </ul>
           <p>
             So this is the first website I made with next.js technology <br />
-            Ofcourse it`&apos;`s nothing big, but the purpose is to get familiar
+            Ofcourse it&apos;s nothing big, but the purpose is to get familiar
             with the technology with small steps.
             <br />
             Atleast this is the approach in my Neuefisch Traineeship for Web
             Development. <br />
-            For sure I`&apos;`m very excited what`&apos;`ll come next. <br />
+            For sure I&apos;m very excited what&apos;ll come next. <br />
           </p>
         </DetailPage>
       </StyledContainer>

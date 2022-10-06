@@ -28,6 +28,9 @@ export default function Header() {
         </Link>{" "}
         <Link href="/Categories">
           <Anchor active={pathname === "/Categories"}>SSG</Anchor>
+        </Link>{" "}
+        <Link href="/RecipesSSR">
+          <Anchor active={pathname === "/RecipesSSR"}>SSR</Anchor>
         </Link>
         {/* 
         <Link>
