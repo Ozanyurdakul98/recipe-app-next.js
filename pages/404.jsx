@@ -3,11 +3,11 @@ import styled from "styled-components";
 export default function Error404() {
   return (
     <>
-      <StyledContainer style={{ padding: "0px" }}>
+      <StyledContainer s>
         <DetailPage>
           <h1>
             Site was not found!!! <br />
-            I'm verry sorry for this!
+            I`&apos;`m verry sorry for this!
           </h1>
         </DetailPage>
       </StyledContainer>
