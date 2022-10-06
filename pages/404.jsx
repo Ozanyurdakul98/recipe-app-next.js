@@ -7,7 +7,7 @@ export default function Error404() {
         <DetailPage>
           <h1>
             Site was not found!!! <br />
-            I`&apos;`m verry sorry for this!
+            I&apos;m verry sorry for this!
           </h1>
         </DetailPage>
       </StyledContainer>
