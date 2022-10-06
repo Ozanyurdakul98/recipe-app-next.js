@@ -23,6 +23,12 @@ export default function Header() {
         <Link href="/Veggie">
           <Anchor active={pathname === "/Veggie"}>Veggie</Anchor>
         </Link>
+        <Link href="/Recipes">
+          <Anchor active={pathname === "/Recipes"}>Dynamic-Routing</Anchor>
+        </Link>{" "}
+        <Link href="/Categories">
+          <Anchor active={pathname === "/Categories"}>SSG</Anchor>
+        </Link>
         {/* 
         <Link>
           <a>Account</a>
@@ -57,17 +63,23 @@ const Anchor = styled.a`
     cursor: pointer;
     color: var(--text-secondary);
   }
+
+  @media (max-width: 900px) {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
 `;
 
 const StyledNav = styled.nav`
   display: flex;
   justify-content: space-between;
 
-  @media (max-width: 700px) {
-    display: flex;
-    flex-direction: column;
+  @media (max-width: 900px) {
+    display: block;
     position: absolute;
     color: white;
+    width: 100%;
+    text-align: center;
     top: 100px;
     right: 0;
     background-color: var(--background-primary);
